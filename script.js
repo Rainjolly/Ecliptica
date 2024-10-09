@@ -10,14 +10,4 @@ document.addEventListener("DOMContentLoaded", function () {
         star.style.left = `${Math.random() * 100}%`;
         shootingStarsContainer.appendChild(star);
     }
-
-    // Light aura effect that follows the cursor
-    let aura = document.createElement("div");
-    aura.className = "light-aura";
-    document.body.appendChild(aura);
-
-    document.body.addEventListener("mousemove", function (e) {
-        aura.style.top = (e.clientY - 25) + "px"; // Fix centering by subtracting half size
-        aura.style.left = (e.clientX - 25) + "px";
-    });
 });
