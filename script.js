@@ -25,6 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
         sidebar.style.width = "0";
     });
 
+    // Close Sidebar if clicking outside
+    document.addEventListener('click', function(event) {
+        if (!sidebar.contains(event.target) && !openSidebarBtn.contains(event.target)) {
+            sidebar.style.width = "0";
+        }
+    });
+
     // Change Background
     bgOptions.forEach(function(option) {
         option.addEventListener('click', function() {

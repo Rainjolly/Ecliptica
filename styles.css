@@ -6,6 +6,7 @@ body {
     background-size: cover;
     color: #fff;
     overflow-x: hidden;
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAQAA8ABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAADezv8ApXP/AAAAAADGrfcA////ABAxWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiJSIiIiIiIiIiIiIiIiIiIlNSIiIiIiIiIiIiIiIiIiJTNSIiIiIiIiIiIiIiIiIiUBNSIiIiIiIiIiIiIiIiIlERNSIiIiIiIiIiIiIiIiJQETNSIiIiIiIiIiIiIiIiUBERNSIiIiIiIiIiIiIiIlADEBNVVVVSIiIiIiIiIiJQMzAzMzMzUiIiIiIiIiIiUDMBAQAQRSIiIiIiIiIiIlAzMAMTBFIiIiIiIiIiIiJTMzMDEAUiIiIiIiIiIiIiUAAwMwRSIiIiIiIiIiIiIlMDADBFIiIiIiIiIiIiIiJTAzMEUiIiIiIiIiIiIiIiUAMwRSIiIiIiIiIiIiIiIlAQBFIiIiIiIiIiIiIiIiJRABUiIiIiIiIiIiIiIiIiUxFSIiIiIiIiIiIiIiIiIlM1IiIiIiIiIiIiIiIiIiJTUiIiIiIiIiIiIiIiIiIiJSIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL////////////////////////////+/////H////w////8H////A////wH///8A////AAH//wAB//8AA///AAf//wAP//8AH///AD///wB///8A////Af///wP///8H////D////x////+/////////////////////////////w=='), auto;
 }
 
 /* Sidebar Styles */
