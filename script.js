@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
     const shootingStarsContainer = document.querySelector('.shooting-stars');
-    
+    const openSidebarBtn = document.getElementById('open-sidebar');
+    const closeSidebarBtn = document.getElementById('close-sidebar');
+    const sidebar = document.getElementById('sidebar');
+    const bgOptions = document.querySelectorAll('.bg-option');
+
     // Create multiple shooting stars
     for (let i = 0; i < 20; i++) {
         const star = document.createElement('div');
@@ -10,4 +14,23 @@ document.addEventListener("DOMContentLoaded", function () {
         star.style.left = `${Math.random() * 100}%`;
         shootingStarsContainer.appendChild(star);
     }
+
+    // Open Sidebar
+    openSidebarBtn.addEventListener('click', function() {
+        sidebar.style.width = "250px";
+    });
+
+    // Close Sidebar
+    closeSidebarBtn.addEventListener('click', function() {
+        sidebar.style.width = "0";
+    });
+
+    // Change Background
+    bgOptions.forEach(function(option) {
+        option.addEventListener('click', function() {
+            const bg = this.getAttribute('data-bg');
+            document.body.style.backgroundImage = `url(${bg})`;
+            sidebar.style.width = "0"; // Automatically close sidebar after selection
+        });
+    });
 });

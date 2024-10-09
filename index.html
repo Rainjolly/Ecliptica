@@ -12,7 +12,7 @@
     <!-- Custom Cursor -->
     <style type="text/css">
         body {
-            cursor: url('data:image/x-icon;base64,AAACAAEAICAQAA8ABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAADezv8ApXP/AAAAAADGrfcA////ABAxWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiJSIiIiIiIiIiIiIiIiIiIlNSIiIiIiIiIiIiIiIiIiJTNSIiIiIiIiIiIiIiIiIiUBNSIiIiIiIiIiIiIiIiIlERNSIiIiIiIiIiIiIiIiJQETNSIiIiIiIiIiIiIiIiUBERNSIiIiIiIiIiIiIiIlADEBNVVVVSIiIiIiIiIiJQMzAzMzMzUiIiIiIiIiIiUDMBAQAQRSIiIiIiIiIiIlAzMAMTBFIiIiIiIiIiIiJTMzMDEAUiIiIiIiIiIiIiUAAwMwRSIiIiIiIiIiIiIlMDADBFIiIiIiIiIiIiIiJTAzMEUiIiIiIiIiIiIiIiUAMwRSIiIiIiIiIiIiIiIlAQBFIiIiIiIiIiIiIiIiJRABUiIiIiIiIiIiIiIiIiUxFSIiIiIiIiIiIiIiIiIlM1IiIiIiIiIiIiIiIiIiJTUiIiIiIiIiIiIiIiIiIiJSIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL////////////////////////////+/////H////w////8H////A////wH///8A////AAH//wAB//8AA///AAf//wAP//8AH///AD///wB///8A////Af///wP///8H////D////x////+/////////////////////////////w=='), auto;
+            cursor: url('data:image/x-icon;base64,AAACAAEAICAQAA8ABgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAADezv8ApXP/AAAAAADGrfcA////ABAxWgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiJSIiIiIiIiIiIiIiIiIiIlNSIiIiIiIiIiIiIiIiIiJTNSIiIiIiIiIiIiIiIiIiUBNSIiIiIiIiIiIiIiIiIlERNSIiIiIiIiIiIiIiIiJQETNSIiIiIiIiIiIiIiIiUBERNSIiIiIiIiIiIiIiIlADEBNVVVVSIiIiIiIiIiJQMzAzMzMzUiIiIiIiIiIiUDMBAQAQRSIiIiIiIiIiIlAzMAMTBFIiIiIiIiIiIiJTMzMDEAUiIiIiIiIiIiIiUAAwMwRSIiIiIiIiIiIiIlMDADBFIiIiIiIiIiIiIiJTAzMEUiIiIiIiIiIiIiIiUAMwRSIiIiIiIiIiIiIiIlAQBFIiIiIiIiIiIiIiIiJRABUiIiIiIiIiIiIiIiIiUxFSIiIiIiIiIiIiIiIiIlM1IiIiIiIiIiIiIiIiIiJTUiIiIiIiIiIiIiIiIiIiJSIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL////////////////////////////+/////H////w////8H////A////wH///8A////AAH//wAB//8AA///AAf//wAP//8AH///AD///wB///8A////Af///wP///8H////D////x////+/////////////////////////////w=='), auto;
         }
     </style>
 </head>
@@ -23,6 +23,20 @@
         <h1>Ecliptica Guild</h1>
         <p>Ecliptica is a whimsical and welcoming guild, offering a cozy space for gamers who seek fun and friendship in the world of Devas of Creation. Like a celestial campfire under the stars, our guild is a place where smiles, adventure, and camaraderie come together.</p>
         <p>We endorse a safe, inclusive environment where you can relax, share your in-game stories, and create magical memories with fellow gamers. Whether you’re an experienced player or just starting, you’ll find a warm, supportive space to shine in Ecliptica! 🌙✨</p>
+
+        <!-- Sidebar Trigger Button -->
+        <button id="open-sidebar" class="open-btn">🎨</button>
+
+        <!-- Hidden Sidebar -->
+        <div id="sidebar" class="sidebar">
+            <button id="close-sidebar" class="close-btn">&times;</button>
+            <h3>Select Background:</h3>
+            <ul>
+                <li><button class="bg-option" data-bg="https://images7.alphacoders.com/127/thumb-1920-1274619.jpg">Background 1</button></li>
+                <li><button class="bg-option" data-bg="https://wallpaperbat.com/img/16619825-purple-clouds-space-moon-desktop.jpg">Background 2</button></li>
+                <li><button class="bg-option" data-bg="https://images6.alphacoders.com/133/1330710.png">Background 3</button></li>
+            </ul>
+        </div>
 
         <!-- Our Sites Section -->
         <h2>Our Sites</h2>
@@ -41,6 +55,7 @@
             </div>
         </div>
 
+        <!-- Perks Section -->
         <div class="perks-section">
             <h2>Perks of Joining Ecliptica</h2>
             <ul>
