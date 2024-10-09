@@ -6,6 +6,7 @@ body {
     background-size: cover;
     color: #fff;
     overflow: hidden;
+    cursor: url('https://cdn-icons-png.flaticon.com/512/1828/1828843.png'), auto;
 }
 
 .container {
@@ -61,11 +62,11 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 3px;
-    height: 3px;
+    width: 6px;
+    height: 6px;
     background-color: white;
-    box-shadow: 0 0 10px white;
-    animation: shooting-star 3s linear infinite;
+    box-shadow: 0 0 15px white;
+    animation: shooting-star 5s linear infinite;
 }
 
 @keyframes shooting-star {
@@ -80,4 +81,33 @@ p {
         transform: translateX(100vw) translateY(-100vh);
         opacity: 0;
     }
+}
+
+.perks-section {
+    text-align: left;
+    margin: 30px auto;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.perks-section ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.perks-section ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.perks-section ul li::before {
+    content: \"\\2728\";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f9f9f9;
+    font-size: 1.2rem;
 }
