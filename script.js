@@ -2,24 +2,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const shootingStarsContainer = document.querySelector('.shooting-stars');
     
     // Create multiple shooting stars
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < 20; i++) {
         const star = document.createElement('div');
         star.classList.add('star');
-        star.style.animationDuration = `${Math.random() * 4 + 3}s`;
+        star.style.animationDuration = `${Math.random() * 4 + 2}s`;
         star.style.top = `${Math.random() * 100}%`;
-        star.style.left = `${Math.random() * -20}%`;
+        star.style.left = `${Math.random() * 100}%`;
         shootingStarsContainer.appendChild(star);
     }
-    
-    // Add hover light aura effect around the cursor
+
+    // Light aura effect that follows the cursor
+    let aura = document.createElement("div");
+    aura.className = "light-aura";
+    document.body.appendChild(aura);
+
     document.body.addEventListener("mousemove", function (e) {
-        const aura = document.createElement("div");
-        aura.className = "light-aura";
-        aura.style.top = e.clientY + "px";
-        aura.style.left = e.clientX + "px";
-        document.body.appendChild(aura);
-        setTimeout(() => {
-            document.body.removeChild(aura);
-        }, 500);
+        aura.style.top = (e.clientY - 25) + "px"; // Fix centering by subtracting half size
+        aura.style.left = (e.clientX - 25) + "px";
     });
 });
